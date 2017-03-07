@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="hi5_Watch_App" customModuleProvider="target">
+                    <items>
+                        <button width="0.46000000000000002" height="0.45000000000000001" alignment="center" backgroundImage="Metrics Button" id="FQv-Wa-E7k">
+                            <connections>
+                                <segue destination="KTy-Os-4Zc" kind="push" id="bT2-Ms-nle"/>
+                            </connections>
+                        </button>
+                        <button width="0.46000000000000002" height="0.45000000000000001" alignment="center" verticalAlignment="bottom" backgroundImage="Compass Button" id="qNM-6b-Gcf">
+                            <connections>
+                                <segue destination="Kxl-Xa-i0S" kind="push" id="DGb-Nj-9EQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" cyan="0.0" magenta="0.00017728656530380249" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <connections>
+                        <outlet property="compassButton" destination="qNM-6b-Gcf" id="r5E-EO-3Zw"/>
+                        <outlet property="metricsButton" destination="FQv-Wa-E7k" id="hhp-hY-HoE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="9bz-hS-q8e">
+            <objects>
+                <controller id="Kxl-Xa-i0S">
+                    <items>
+                        <imageView width="0.80000000000000004" height="0.73999999999999999" alignment="center" verticalAlignment="center" image="Compass Button" id="17Q-8X-gbq"/>
+                        <button height="22.5" alignment="left" title="&lt; back" id="mMp-1h-Xg1">
+                            <color key="titleColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="Bph-fw-J2A"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="501" y="533"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="IHq-NI-M5O">
+            <objects>
+                <controller id="lPX-f2-9VZ"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="4EA-Lz-t4h">
+            <objects>
+                <controller id="KTy-Os-4Zc">
+                    <items>
+                        <button height="21.5" alignment="left" title="&lt; back" id="Jqw-7N-Ucr">
+                            <color key="titleColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="vy1-T5-fjP"/>
+                            </connections>
+                        </button>
+                        <imageView width="0.80000000000000004" height="0.73999999999999999" alignment="center" verticalAlignment="center" image="Metrics Button" id="aF9-d6-niN"/>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="497" y="64"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Bph-fw-J2A"/>
+    </inferredMetricsTieBreakers>
+</document>
